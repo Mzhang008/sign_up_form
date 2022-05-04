@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="sidebar">
+            <div id="odin-logo">
+                <img id="odin-logo-img" src="./images/odin-lined.png">ODIN
+
+            </div>
+        </div>
+        
+        <div class="main">
+           <div id="tagline">This is not a real online service! You know you need something
+               like this in your life to help you realize your deepest dreams. Sign up <i>now</i> 
+               to get started.<br><br>You <i>know</i> you want to.
+           </div>
+           <div class="sign_up_form">
+               <p>Let's do this!</p>
+               <form id="sign_up_form" action="example.com/path" method="post">
+                    <div class="label_and_input">
+                        <label for="first_name">First Name</label>
+                        <input id="first_name" name="first_name" type="text" required>
+                    </div>
+                    <div class="label_and_input">
+                        <label for="last_name">Last Name</label>
+                        <input id="last_name" name="last_name" type="text" required>
+                    </div>
+                    <div class="label_and_input">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required>
+                    </div>
+                    <div class="label_and_input">
+                        <label for="phone_number">Phone Number</label>
+                        <input id="phone_number" name="phone_number" type="text" 
+                            pattern="\d{3}([\-]?)\d{3}([\-]?)\d{4}" 
+                            title="Please enter a valid 10 digit phone number, ex: 123-456-7890 "
+                            required>
+                    </div>
+                    <div class="label_and_input">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" required>
+                    </div>
+                    <div class="label_and_input">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input id="confirm_password" name="confirm_password" type="password" required>
+                    </div>                    
+               </form>
+            </div>
+            <div id="bottom">
+                <button id="submit_button" type="submit" form="sign_up_form">Create Account</button>
+                <p id="loginprompt">Already have an account? <a href="">Log In</a></p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/scripts/index.js">
+    </script>
+</body>
+</html>

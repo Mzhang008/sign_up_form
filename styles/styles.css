@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(../images/Norse-Bold.otf);;
+} 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.container {
+    height: 100vh;
+}
+body {
+    height: 100vh;
+}
+#sidebar {
+    height: 100%;
+    width: 35%;
+    position: fixed;
+    background: url('../images/fern.avif');
+}
+#odin-logo {
+    margin-top: 30vh;
+    font-family: 'Norse-Bold';
+    font-size: 90px;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#odin-logo-img {
+    height: 100px;
+
+}
+
+.main {
+    height: 100vh;
+    width: 65%;
+    position: fixed;
+    right: 0;
+    background-color: #f9fafb;
+}
+#tagline {
+    padding-top: 22vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    font-size: 25px;
+}
+#bottom {
+    height: 100%;
+    padding-left: 50px;   
+    padding-top: 50px;
+
+}
+input {
+    border-color: #E5E7EB;
+}
+input:focus {
+    border-color: blue;
+}
+.invalidInput {
+    border-color: red;
+    box-shadow: 1px 1px black;
+}
+.sign_up_form {
+    padding-top: 30px;
+    box-shadow: 5px 2px 5px 0px gray; 
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sign_up_form > p {
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2,30%);
+    grid-template-rows: 3;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    column-gap: 40px;
+    
+    
+}
+.label_and_input {
+    display:grid;
+    grid-template-columns: 100%;
+    padding: 2px;
+}
+
+#loginprompt {
+    padding-top: 25px;
+}
